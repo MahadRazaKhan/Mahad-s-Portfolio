@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333; 
+    background-color: #F4F4F4; 
+}
+
+/* Navbar */
+header {
+    background: #2C3E50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #18BC9C;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover {
+    color: #E67E22;
+}
+/* Header */
+.header {
+    background: url('https://t3.ftcdn.net/jpg/02/06/43/08/360_F_206430833_QHlu73UIpLn2COdZ20S03xCQOYL2wRjD.jpg') no-repeat center center/cover;
+    height: 100vh;
+    padding: 100px 0;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    max-width: 600px;
+}
+
+.left-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #ff4a57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e0434e;
+}
+
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #00b4d8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cv-button:hover {
+    background: #0096c7;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .left-section p {
+        font-size: 1.2rem;
+    }
+
+    .cv-button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .left-section p {
+        font-size: 1rem;
+    }
+
+    .header {
+        padding: 60px 0;
+    }
+}
+/* Projects Section */
+.projects {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Same background color as skills section */
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2C3E50;
+    font-family: 'Roboto Slab', serif;
+}
+
+.projects hr {
+    width: 50%;
+    margin: 0 auto 2rem;
+    border: 1px solid #ddd;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border:1px dotted black;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #34495E;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For devices with a max-width of 768px */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For devices with a max-width of 480px */
+@media (max-width: 480px) {
+    .projects h2 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+
+    .project-card img {
+        max-width: 80%;
+    }
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2C3E50;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.about hr {
+    width: 50%;
+    margin: 0 auto 2rem;
+    border: 1px solid #ddd;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.about-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+/* Ensuring the content is centered within each about-item */
+.about-item h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #34495E;
+}
+
+.about-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center; /* Center the items */
+    }
+    
+    .about-item {
+        max-width: 100%; /* Allow full width on smaller screens */
+        margin: 0 auto; /* Center the item */
+    }
+}
+
+
+
+/* Skills */
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2C3E50;
+    font-family: 'Roboto Slab', serif;
+}
+
+.skills hr {
+    width: 50%;
+    margin: 0 auto 2rem;
+    border: 1px solid #ddd;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skill-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 200px;
+    flex: 1 1 200px;
+}
+
+.skill-item img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Ensures aspect ratio is maintained without distortion */
+    margin-bottom: 0.5rem;
+}
+
+.skill-item h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.skill-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Design for Skills Section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill-item {
+        max-width: 90%;
+    }
+}
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2C3E50;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #34495E;
+}
+/* Footer */
+footer {
+    background: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
