@@ -1,5 +1,5 @@
 # Mahad's Portfolio
 
-Welcome to **Mahad's Portfolio**! This repository contains the code for my professional portfolio website, showcasing my skills, projects, and expertise.
+Welcome to **Mahad's Portfolio**!
 
-🌐 **Live Demo**: [Mahad's Portfolio](https://mahadrazakhan.github.io/Mahad-s-Portfolio/)
+🌐 **Live at**: [Mahad's Portfolio](https://mahadrazakhan.github.io/Mahad-s-Portfolio/)
